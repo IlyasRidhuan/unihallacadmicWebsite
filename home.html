@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University Academic Website</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/style" href="css/style.css">
+	<script>
+		function majorByDegree(){
+			window.location="//handbooks.uwa.edu.au/majors?listmode=bydegree";
+		}
+		function majorByAlphabet(){
+			window.location="//handbooks.uwa.edu.au/majors?listmode=alpha";
+		}
+		function tuteTimetable(){
+			window.location="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/11015880_10153135095471737_3150811785932476570_n.jpg?oh=6e8e396aeacf326765fe0a36cc2d8cb6&oe=557CD8F7&__gda__=1435215250_7c79b6f6afaada9b8da20701fc6711de";
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<a href="home.html">
+					<img class="img-responsive" src="images/uni-hall.png" alt="Unihall Logo" style="width:120px" >
+				</a>
+			</div>
+			<div class="col-md-6 text-right text-uppercase" >
+				<h1>University Hall</h1>
+				<h4>Academic Program Website </h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<hr>	
+			</div>
+		</div>
+		<div>
+			<h2> Search for a Peer Contact</h2>
+			<p>Peer contacts are volunteers who have achieved at least a distinction in their units and have offered to help residents doing those units. Please read the <a href="images/charter.png">charter</a> before you contact a peer contact</p>
+		</div>
+		<div>
+			<div class="row">
+				<div class="col-md-6">
+				 	<form action="action_page.php" method="GET">
+						<input type="text" name="unitSearch" placeholder="Search By Unit">
+						<input type="submit" class="subButton" value="Unit Search">
+					</form>
+				</div>
+				<div class="col-md-6">
+					<form action="action_page.php" method="GET"> 
+						<input type="text" name="peerSearch" placeholder="Search By Peer Contact" style="width: 185px">
+						<input type="submit" class="subButton" value="Peer Search">
+					</form>
+			</div>
+		</div>
+		<div class="row">
+                        <div class="col-md-12">
+                                <hr>
+                        </div>
+                </div>
+		<div>
+			<h2>Not sure what units make up your major?</h2>
+			
+			<p>This is where you can find general information about your units and majors without hving to traverse the UWA website</p>
+			<div class="row">
+		 		<button class="btn-primary col-md-3" style="margin-right:40px" onclick="majorByDegree();">Majors By Degree</button>
+				<button class="btn-primary col-md-3" style="margin-right:40px" onclick="majorByAlphabet();">Majors In Alphabetical Order</button>
+				<form onSubmit="javascript: var tmp = 'http://www.unitoutlines.science.uwa.edu.au/Units/' + document.getElementById('outlineSearch').value + '/SEM-1/2015/CRAWLEY/'; window.location.href = tmp; return false;">
+					<input id="outlineSearch" type="text" name="outlineSearch" placeholder="Search For Unit Outline"style="width:200px">
+					<input type="submit" class="subButton" value="Major Search">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+                        <div class="col-md-12">
+                                <hr>
+                        </div>
+                </div>
+		<div>
+			<h2>University Hall Academic Program</h2>
+			<p>Here is where you will find contact details for tutors and the tutorial timetable</p>
+			<div class="row">
+				<button class="btn-primary col-md-3" style="margin-right:40px" onclick="tuteTimetable();">Tutorial TimeTable</button>
+				<form action="tutor_page.php" method="GET">
+					<input type="text" name="tutorSearch" placeholder="Search For Tutor">
+					<input type="submit" class="subButton" value="Tutor Search">
+				</form>
+			</div>
+			
+		</div>
+		<div class="row">
+                        <div class="col-md-12">
+                                <hr>
+                        </div>
+                </div>
+<!--		<div>
+			<h2> Search and Add Yourself to Study Groups</h2>
+			<p> The aim of a study group is to provide an opportunity to communicate and collaborate with residents doing similar units </p>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form action="group_search.php" method="GET">
+					<input type="text" name="groupSearch" placeholder="Search For A Study Group"style="width:200px">
+					<input type="submit" class="subButton" value="Study Group Search">
+				</form>
+			</div>
+			<div class="col-md-6">
+				<button id="searchButton" class="btn-primary col-md-4" style="margin-right:40px" type="button" onclick="location.href='search_group.php';">Search For A Study Group</button>
+				<button class="btn-primary col-md-4" id="createButton" type="button" style="margin-right:40px" onclick="location.href='create_group.php';">Create Study Group</button>
+			</div>
+		</div> -->
+		<div>
+			<hr>
+		</div>
+		<br>
+		<div>
+			<h6 style="text-align:center">Email <a href=https://www.gmail.com>20770816@student.uwa.edu.au</a> For Issues And Enquiries</h6>
+		</div>
+	</div>
+</body>
+</html>

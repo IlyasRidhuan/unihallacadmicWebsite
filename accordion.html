@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script>
+		$(function() {
+    			var $research = $('.research');
+    			$research.find("tr").not('.accordion').hide();
+    			$research.find("tr").eq(0).show();
+    
+    			$research.find(".accordion").click(function(){
+        			$research.find('.accordion').not(this).siblings().fadeOut(500);
+        			$(this).siblings().fadeToggle(500);
+   			 	}).eq(0).trigger('click');
+			});
+	</script>
+</head>
+<table class="research">
+                <tbody>
+                    <tr class="accordion">
+                        <td colspan="3">This is the header</td>
+                    </tr>
+                    <tr>
+                        <td>Research</td>
+                        <td>Description</td>
+                        <td>Partner</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="research">
+                <tbody>
+                    <tr class="accordion">
+                        <td colspan="3">This is the header</td>
+                    </tr>
+                    <tr>
+                        <td>Research</td>
+                        <td>Description</td>
+                        <td>Partner</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="research">
+                <tbody>
+                    <tr class="accordion">
+                        <td colspan="3">This is the header</td>
+                    </tr>
+                    <tr>
+                        <td>Research</td>
+                        <td>Description</td>
+                        <td>Partner</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+                    </tr>
+                </tbody>
+            </table>
+</html>
